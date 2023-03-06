@@ -30,4 +30,16 @@ class Comment extends Post
 		System.out.println('"' + this.comment + '"');
 	}
 	
+	class Photo extends Post
+	{
+
+		int[][] img;	
+		Photo(int n, int m) {
+			super(2);
+			for(int i=0;i<n;i++)
+				for(int j=0;j<m;j++)
+					img[i][j]=1;
+		}
+	}
+	
 }
