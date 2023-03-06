@@ -45,6 +45,16 @@ class Comment extends Post
 				for(int j=0;j<m;j++)
 					img[i][j]=new Random().nextInt(255);
 		}
+		void printPost()
+		{
+			System.out.println("New post! Subject posted a new photo " + '\n');
+			for(int i=0;i<this.n;i++)
+			{
+				for(int j=0;j<m;j++)
+					System.out.println(img[i][j]);
+				System.out.println('\n');
+			}
+		}
 	}
 	
 }
