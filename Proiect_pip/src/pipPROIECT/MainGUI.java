@@ -253,8 +253,8 @@ public class MainGUI {
 		unfollow_button.setBounds(248, 93, 83, 23);
 		subject.add(unfollow_button);
 		
-		JLabel lblNewLabel_3 = new JLabel("SubAcc");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 28));
+		JLabel lblNewLabel_3 = new JLabel("Account");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		lblNewLabel_3.setBounds(10, 33, 97, 84);
 		subject.add(lblNewLabel_3);
 		
