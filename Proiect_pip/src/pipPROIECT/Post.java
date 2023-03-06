@@ -1,5 +1,7 @@
 package pipPROIECT;
 
+import java.util.Random;
+
 // Post class implemented to add new posts types (ex: photo with image and caption)
 
 public class Post {
@@ -32,13 +34,16 @@ class Comment extends Post
 	
 	class Photo extends Post
 	{
-
+		int n, m;
 		int[][] img;	
-		Photo(int n, int m) {
+		
+		Photo(int a, int b) {
 			super(2);
+			this.m=a;
+			this.n=b;
 			for(int i=0;i<n;i++)
 				for(int j=0;j<m;j++)
-					img[i][j]=1;
+					img[i][j]=new Random().nextInt(255);
 		}
 	}
 	
