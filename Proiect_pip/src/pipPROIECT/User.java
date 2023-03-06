@@ -12,7 +12,7 @@ public class User implements Observer {
 	// updates followers when there is a new post (called in SubjectAcount.notifyRegisteredObservers)
 	@Override
 	public void update(Post post) {
-		System.out.println("notification for [ " + this.getUsername() + " ]" );
+		System.out.println( this.getUsername() + ", you have a new notification!" );
 		post.printPost();
 	}
 	
