@@ -8,7 +8,10 @@ public class SubjectAccount implements Subject {
 	private List<User> followers = new ArrayList<User>();
 	List<Post> posts = new ArrayList<Post>();
 	
-	// creates mew post and adds it to the post list
+	/**
+	 * creates new post and adds it to the post list
+	 * @param comm  new post content
+	 */
 	public void createNewPost(String comm)
 	{	
 		Post newpost = new Comment(comm);
